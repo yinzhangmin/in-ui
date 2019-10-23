@@ -1,0 +1,1583 @@
+﻿/* 
+*
+    *   http://jquery.alyzm.com
+    * *
+    *   Copyright 2010-2014 © (A.lawliet)JQUERY.ALYZM.COM®. All rights reserved
+    * *
+    *   alawliet@msn.cn   
+*        
+*/
+.AlBox {
+    width: auto;
+    height: auto;
+    min-width: 100px;
+    min-height: 10px;
+    z-index: 700;
+    background-color: #fff;
+    position: absolute;
+    margin-top: 0px;
+    left: 0;
+    top: 0;
+    display: none;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: auto auto;
+}
+
+    .AlBox .AlBoxTitle {
+        width: 100%;
+        height: 35px;
+        background-color: #fafafa;
+        border-bottom: 1px dashed #d4d4d4;
+    }
+
+        .AlBox .AlBoxTitle .AlBoxTxt {
+            width: 80%;
+            height: 100%;
+            float: left;
+            line-height: 35px;
+            margin-left: 10px;
+            overflow: hidden;
+            font-size: 14px;
+        }
+
+            .AlBox .AlBoxTitle .AlBoxTxt > i {
+                font-size: 16px;
+                padding-right: 5px;
+            }
+
+        .AlBox .AlBoxTitle .AlBoxClose {
+            width: 60px;
+            height: 100%;
+            float: right;
+            width: 10px;
+            height: 10px;
+            background: url("../Images/button-cancel.png") no-repeat;
+            margin-top: 12px;
+            margin-right: 12px;
+            cursor: pointer;
+        }
+
+    .AlBox .AlBoxContent {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        overflow-y: auto;
+    }
+
+    .AlBox .AlBoxButtom {
+        width: 100%;
+        height: 40px;
+        float: left;
+    }
+
+        .AlBox .AlBoxButtom .AlBoxBtn {
+            display: block;
+            height: 31px;
+            text-decoration: none;
+            text-align: center;
+            line-height: 31px;
+            float: right;
+            margin-top: 6px;
+            margin-right: 5px;
+            cursor: pointer;
+            width: 76px;
+            height: 31px;
+            border: none;
+            background-color: #19aa8d;
+            color: #fff;
+            border-radius: 15px;
+        }
+
+            .AlBox .AlBoxButtom .AlBoxBtn:hover {
+                background-color: #16967c;
+            }
+
+.alBoxConfig_Content {
+    width: auto;
+    height: 80px;
+    line-height: 100px;
+    overflow: hidden;
+}
+
+.alBox_Message_Info {
+    width: 200px;
+    height: 50px;
+    float: left;
+    line-height: 50px;
+    text-align: left;
+    margin-left: 2px;
+    margin-top: 10px;
+}
+
+.alBox_Message_Alert {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-left: 7px;
+    margin-top: 10px;
+    background: url("../Images/Message.jpg") no-repeat 0px 0px;
+}
+
+.loadingContent {
+    width: 120px;
+    height: 51px;
+    z-index: 10001;
+    clear: both;
+    margin: auto auto;
+}
+
+.AlMessage {
+    z-index: 9999;
+    border-bottom: #999999 1px solid;
+    position: fixed;
+    border-left: #999999 1px solid;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: none;
+    overflow: hidden;
+    border-top: #999999 1px solid;
+    border-right: #999999 1px solid;
+    padding-top: 10px;
+    _position: absolute;
+    -webkit-box-shadow: 1px 1px 6px #999999;
+    -moz-box-shadow: 1px 1px 6px #999999;
+    box-shadow: 1px 1px 6px #999999;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+    .AlMessage .messageContent {
+        padding-bottom: 0px;
+        line-height: 32px;
+        padding-left: 30px;
+        padding-right: 10px;
+        color: #666666;
+        padding-top: 0px;
+        text-align: center;
+    }
+
+    .AlMessage .messagewarnIcon {
+        background: url("../Images/Message.jpg") no-repeat 0px -10px;
+        display: inline-block;
+        height: 30px;
+        line-height: 30px;
+        padding-left: 50px;
+    }
+
+    .AlMessage .messagesuccessIcon {
+        background: url("../Images/Message.jpg") no-repeat 0px -90px;
+        display: inline-block;
+        height: 30px;
+        line-height: 30px;
+        padding-left: 50px;
+    }
+
+    .AlMessage .messageerrorIcon {
+        background: url("../Images/Message.jpg") no-repeat 0px -150px;
+    }
+
+    .AlMessage .messageIframe {
+        z-index: -1;
+        position: absolute;
+        width: 2000px;
+        height: 2000px;
+        top: -100px;
+        left: -100px;
+    }
+
+.alPicture {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+    .alPicture .all-c {
+        height: 100%;
+        overflow: hidden;
+        float: left;
+    }
+
+        .alPicture .all-c .i {
+            margin: auto auto;
+            float: left;
+        }
+
+    .alPicture .i-c {
+        height: 5px;
+        width: 100%;
+        position: absolute;
+        z-index: 100;
+        left: 0;
+        bottom: 15px;
+    }
+
+        .alPicture .i-c .n-i {
+            height: 5px;
+            width: 100%;
+            z-index: 100;
+            left: 0;
+            text-align: center;
+            margin: auto auto;
+            display: block;
+        }
+
+        .alPicture .i-c > .n-i > span {
+            float: left;
+            margin: 0 5px 0 5px;
+            width: 5px;
+            height: 5px;
+            text-align: center;
+            background-color: #e2e1e1;
+            display: block;
+            cursor: pointer;
+        }
+
+            .alPicture .i-c > .n-i > span.action {
+                background-color: red;
+            }
+
+    .alPicture .btn {
+        width: 40px;
+        height: 40px;
+        z-index: 100;
+        position: absolute;
+        color: #fff;
+        font-weight: bold;
+        font-family: 宋体;
+        font-size: 26px;
+        line-height: 40px;
+        filter: alpha(opacity = 30);
+        opacity: 0.3;
+        cursor: pointer;
+        bottom: 42%;
+        background-color: #000;
+        text-align: center;
+    }
+
+    .alPicture .prev {
+        left: 3%;
+    }
+
+    .alPicture .next {
+        float: right;
+        left: 90%;
+    }
+
+.tablepage {
+    width: 100%;
+    height: auto;
+}
+
+    .tablepage > .i-t-c.right {
+        height: 31px;
+        width: 100%;
+        border-bottom: 1px solid #d4d4d4;
+    }
+
+        .tablepage > .i-t-c.right > .i-t {
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            width: 100%;
+            border-left: 1px solid #fff;
+            border-right: 1px solid #d4d4d4;
+        }
+
+            .tablepage > .i-t-c.right > .i-t > .i {
+                float: right;
+                min-width: 80px;
+                height: 30px;
+                text-align: center;
+                line-height: 30px;
+                background-color: #f9f9f9;
+                border-bottom: 1px solid #d4d4d4;
+                border-top: 1px solid #d4d4d4;
+                border-left: 1px solid #d4d4d4;
+                cursor: pointer;
+                list-style: none;
+            }
+
+            .tablepage > .i-t-c.right > .i-t > .title {
+                float: left;
+                min-width: 80px;
+                height: 30px;
+                text-align: left;
+                line-height: 30px;
+                list-style: none;
+            }
+
+            .tablepage > .i-t-c.right > .i-t > .i.select {
+                border-top: 1px solid #d12610;
+                border-bottom: 1px solid #fff;
+                background-color: #fff;
+            }
+
+    .tablepage > .i-t-c.left {
+        height: 31px;
+        width: 100%;
+        border-left: 1px solid #d4d4d4;
+        border-bottom: 1px solid #d4d4d4;
+    }
+
+        .tablepage > .i-t-c.left > .i-t {
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            width: 100%;
+        }
+
+            .tablepage > .i-t-c.left > .i-t > .i {
+                float: left;
+                min-width: 80px;
+                height: 30px;
+                text-align: center;
+                line-height: 30px;
+                background-color: #f9f9f9;
+                border-bottom: 1px solid #d4d4d4;
+                border-top: 1px solid #d4d4d4;
+                border-right: 1px solid #d4d4d4;
+                cursor: pointer;
+                list-style: none;
+            }
+
+            .tablepage > .i-t-c.left > .i-t > .title {
+                float: right;
+                min-width: 80px;
+                height: 30px;
+                text-align: left;
+                line-height: 30px;
+                list-style: none;
+            }
+
+            .tablepage > .i-t-c.left > .i-t > .i.select {
+                border-top: 1px solid #d12610;
+                border-bottom: 1px solid #fff;
+                background-color: #fff;
+            }
+
+    .tablepage > .i-c {
+        width: 100%;
+        height: auto;
+    }
+
+        .tablepage > .i-c > .c {
+            overflow: hidden;
+            height: auto;
+            min-height: 40px;
+        }
+
+            .tablepage > .i-c > .c > .i {
+                display: none;
+            }
+
+    .tablepage > .border {
+        border-left: 1px solid #d4d4d4;
+        border-bottom: 1px solid #d4d4d4;
+        border-right: 1px solid #d4d4d4;
+    }
+
+.tablepage2 {
+    width: 100%;
+    height: auto;
+}
+
+    .tablepage2 > .i-t-c.right {
+        height: 31px;
+        width: 100%;
+        border-bottom: 1px solid #d4d4d4;
+    }
+
+        .tablepage2 > .i-t-c.right > .i-t {
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            width: 100%;
+        }
+
+            .tablepage2 > .i-t-c.right > .i-t > .i {
+                float: right;
+                min-width: 80px;
+                height: 30px;
+                text-align: center;
+                line-height: 30px;
+                cursor: pointer;
+                border-top: 1px solid #fff;
+                border-left: 1px solid #fff;
+                border-right: 1px solid #fff;
+                list-style: none;
+            }
+
+            .tablepage2 > .i-t-c.right > .i-t > .title {
+                float: left;
+                min-width: 80px;
+                height: 30px;
+                text-align: left;
+                line-height: 30px;
+                list-style: none;
+            }
+
+            .tablepage2 > .i-t-c.right > .i-t > .i.select {
+                border-top: 1px solid #d4d4d4;
+                border-left: 1px solid #d4d4d4;
+                border-bottom: 1px solid #fff;
+                border-right: 1px solid #d4d4d4;
+                background-color: #fff;
+            }
+
+    .tablepage2 > .i-t-c.left {
+        height: 36px;
+        width: 100%;
+        border-bottom: 1px solid #d4d4d4;
+    }
+
+        .tablepage2 > .i-t-c.left > .i-t {
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            width: 100%;
+        }
+
+            .tablepage2 > .i-t-c.left > .i-t > .i {
+                float: left;
+                min-width: 80px;
+                height: 35px;
+                text-align: center;
+                line-height: 35px;
+                cursor: pointer;
+                border-top: 1px solid #fff;
+                border-left: 1px solid #fff;
+                border-right: 1px solid #fff;
+                list-style: none;
+            }
+
+            .tablepage2 > .i-t-c.left > .i-t > .title {
+                float: right;
+                min-width: 80px;
+                height: 35px;
+                text-align: left;
+                line-height: 35px;
+                list-style: none;
+            }
+
+            .tablepage2 > .i-t-c.left > .i-t > .i.select {
+                border-top: 1px solid #d12610;
+                border-left: 1px solid #d4d4d4;
+                border-bottom: 1px solid #fff;
+                border-right: 1px solid #d4d4d4;
+                background-color: #fff;
+            }
+
+    .tablepage2 > .i-c {
+        width: 100%;
+        height: auto;
+    }
+
+        .tablepage2 > .i-c > .c {
+            overflow: hidden;
+            height: auto;
+            min-height: 40px;
+        }
+
+            .tablepage2 > .i-c > .c > .i {
+                display: none;
+            }
+
+    .tablepage2 > .border > .c {
+        border-left: 1px solid #d4d4d4;
+        border-bottom: 1px solid #d4d4d4;
+        border-right: 1px solid #d4d4d4;
+    }
+/*search*/
+.al-search {
+    width: 600px;
+    height: 40px;
+    margin: 0px;
+    left: calc((100% - 600px)/2);
+    top: 20%;
+    border: 1px solid #19aa8d;
+    background-color: #fff;
+    position: absolute;
+    z-index: 10000;
+    overflow: hidden;
+    display: block;
+    padding: 4px 0 4px 0px;
+    border-radius: 6px;
+    -moz-border-radius: 0 0 6px 6px;
+    -webkit-border-radius: 0 0 6px 6px;
+    -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    cursor: move;
+}
+
+    .al-search > .input {
+        height: 30px;
+        width: 75%;
+        padding-left: 4px;
+        float: left;
+        margin-left: 4px;
+        margin-top: 5px;
+        background-color: transparent;
+        border-right: 1px dashed #d4d4d4;
+    }
+
+        .al-search > .input > input {
+            height: 100%;
+            width: 100%;
+            float: left;
+            border: none;
+        }
+
+    .al-search > .move {
+        border: none;
+        height: 40px;
+        width: 40px;
+        float: right;
+        text-align: center;
+        line-height: 40px;
+        cursor: move;
+    }
+
+    .al-search > .ok {
+        border: none;
+        height: 40px;
+        width: 40px;
+        float: right;
+        text-align: center;
+        line-height: 40px;
+        cursor: pointer;
+    }
+
+    .al-search > .close {
+        border: none;
+        height: 40px;
+        width: 40px;
+        float: right;
+        text-align: center;
+        line-height: 40px;
+        cursor: pointer;
+    }
+
+        .al-search > .close:hover {
+            color: red;
+        }
+
+    .al-search > .ok:hover {
+        color: #19aa8d;
+    }
+
+/*tree*/
+.altree {
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+
+    .altree + .al-tree-search {
+        width: 330px;
+        height: 30px;
+        top: 0px;
+        z-index: 0;
+        border-top: 1px solid #eee;
+        background-color: #fff;
+        position: absolute;
+        z-index: 10000;
+        top: 0px;
+        overflow: hidden;
+        display: block;
+        padding: 4px 0 4px 0px;
+        border-radius: 6px;
+        -moz-border-radius: 0 0 6px 6px;
+        -webkit-border-radius: 0 0 6px 6px;
+        -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        -webkit-background-clip: padding-box;
+        -moz-background-clip: padding;
+        background-clip: padding-box;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        cursor: move;
+        border: 1px solid #19aa8d;
+    }
+
+        .altree + .al-tree-search > input {
+            border: 1px solid #fff;
+            height: 30px;
+            width: 200px;
+            padding-left: 4px;
+            float: left;
+            margin-left: 4px;
+        }
+
+            .altree + .al-tree-search > input:hover {
+                border: 1px solid #fff;
+            }
+
+        .altree + .al-tree-search > .move {
+            border: none;
+            height: 40px;
+            width: 40px;
+            float: right;
+            text-align: center;
+            line-height: 30px;
+            cursor: move;
+        }
+
+        .altree + .al-tree-search > .ok {
+            border: none;
+            height: 40px;
+            width: 40px;
+            float: right;
+            text-align: center;
+            line-height: 30px;
+            cursor: pointer;
+        }
+
+        .altree + .al-tree-search > .close {
+            border: none;
+            height: 40px;
+            width: 40px;
+            float: right;
+            text-align: center;
+            line-height: 30px;
+            cursor: pointer;
+        }
+
+            .altree + .al-tree-search > .close:hover {
+                color: red;
+            }
+
+        .altree + .al-tree-search > .ok:hover {
+            color: #19aa8d;
+        }
+
+    .altree > ul {
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+    }
+
+    .altree ul li {
+        margin: 0;
+        padding: 0;
+        padding-left: 8px;
+        height: auto;
+        list-style: none;
+    }
+
+    .altree > ul > li {
+        padding-left: 0;
+    }
+
+    .altree ul li div.t {
+        border-left: 1px dashed #eee;
+        width: 100%;
+        height: 25px;
+        min-height: 25px;
+        white-space: nowrap;
+    }
+
+    .altree > ul > li > div.t {
+        border-left: 0px dashed transparent;
+        width: 100%;
+        height: auto;
+        min-height: 25px;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+        .altree > ul > li > div.t > .state > i {
+            font-size: 14px;
+        }
+
+    .altree ul li div.t.last {
+        border-left: 0px dashed transparent;
+    }
+
+        .altree ul li div.t.last span.l {
+            border-bottom: 1px dashed #eee;
+            border-top: 1px solid transparent;
+            border-left: 1px dashed #eee;
+            height: 14px;
+            width: 13px;
+            float: left;
+        }
+
+    .altree ul li div.t span.i-n:hover + span.state + span.txt ~ span.fn {
+        display: none;
+    }
+
+    .altree ul li div.t span.l:hover + span.i-n + span.state + span.txt ~ span.fn {
+        display: none;
+    }
+
+    .altree ul li div.t span.l:hover + span.i + span.state + span.txt ~ span.fn {
+        display: none;
+    }
+
+    .altree ul li.hide div.sub {
+        display: none;
+    }
+
+    .altree ul li.open div.sub.open {
+        display: inline-block;
+    }
+
+    .altree ul li div.sub {
+        padding-left: 15px;
+        border-left: 1px dashed #eee;
+        width: 100%;
+        min-height: 25px;
+    }
+
+        .altree ul li div.sub.hide {
+            display: none;
+        }
+
+    .altree > ul > li > div.sub {
+        padding-left: 0px;
+        border-left: 0px dashed transparent;
+        width: 100%;
+        min-height: 25px;
+    }
+
+    .altree ul li.last > div.sub {
+        border-left: 1px dashed transparent;
+    }
+
+    .altree ul li div.t span.l {
+        width: 13px;
+        height: 4px;
+        display: inline-block;
+        text-align: center;
+        cursor: pointer;
+        border-top: 1px dashed #eee;
+        margin-right: 5px;
+    }
+
+    .altree ul li div.t span.i {
+        line-height: 16px;
+        width: 16px;
+        height: 16px;
+        text-align: center;
+        cursor: pointer;
+        margin-top: 5px;
+        display: inline-block;
+    }
+
+        .altree ul li div.t span.i:hover {
+            color: red;
+        }
+
+            .altree ul li div.t span.i:hover + span.state + span.txt ~ span.fn {
+                display: none;
+            }
+
+    .altree ul li div.t span.i-n {
+        line-height: 16px;
+        width: 16px;
+        height: 16px;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .altree ul li div.t span.ck {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        margin-left: 5px;
+        background: url("../images/tree.gif") -75px -18px no-repeat;
+        cursor: pointer;
+    }
+
+        .altree ul li div.t span.ck.check {
+            background: url("../images/tree.gif") -75px -1px no-repeat;
+        }
+
+    .altree ul li div.t.last span.ck {
+        margin-left: 5px;
+    }
+
+    .altree ul li div.t span.state {
+        margin-left: 3px;
+        padding-left: 4px;
+    }
+
+        .altree ul li div.t span.state:hover + span.txt ~ span.fn {
+            display: none;
+        }
+
+    .altree ul li div.t span.state, .altree ul li div.t span.fn {
+        display: inline-block;
+        width: 16px;
+        height: 19px;
+        font-size: 15px;
+    }
+
+    .altree ul li div.t span.fn {
+        margin-left: 5px;
+        display: none;
+    }
+
+        .altree ul li div.t span.fn:hover {
+            color: red;
+        }
+
+    .altree ul li div.t span.select {
+        /*background: url("../images/tree.gif") -38px -3px no-repeat;*/
+    }
+
+    .altree ul li div.t span.home {
+        background: url("../images/tree.gif") -55px -2px no-repeat;
+    }
+
+    .altree ul li div.t span.folder {
+        background: url("../images/tree.gif") 0px 4px no-repeat;
+    }
+
+    .altree ul li div.t span.file {
+        background: url("../images/tree.gif") -18px 2px no-repeat;
+    }
+
+    .altree ul li div.t span.loding {
+        background: url("../images/ajax-loader.gif") 0px 5px no-repeat;
+        background-size: 15px 15px;
+    }
+
+    .altree ul li div.t span.add {
+        cursor: pointer;
+        /*background: url("../images/tree.gif") -93px -2px no-repeat;*/
+    }
+
+    .altree ul li div.t span.del {
+        cursor: pointer;
+        /*background: url("../images/tree.gif") -93px -20px no-repeat;*/
+    }
+
+    .altree ul li div.t span.edit {
+        cursor: pointer;
+        /*background: url("../images/tree.gif") -0px -39px no-repeat;*/
+    }
+
+    .altree ul li div.t span.search {
+        cursor: pointer;
+    }
+
+    .altree ul li div.t span.ofn {
+        cursor: pointer;
+    }
+
+    .altree ul li div.t span.txt {
+        display: inline-block;
+        width: auto;
+        height: 25px;
+        line-height: 25px;
+        padding-left: 5px;
+        padding-right: 8px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+
+
+    .altree ul li div.t:hover span.txt {
+        color: #2f4050;
+    }
+
+    .altree ul li div.t span.txt.select {
+        color: #d12610;
+    }
+
+    .altree ul li div.t:hover > span.fn {
+        display: inline-block;
+    }
+
+/*step*/
+.al-step {
+    width: 100%;
+    height: 80px;
+    position: relative;
+}
+
+    .al-step > ul {
+        width: 100%;
+        height: 100%;
+        padding: 2px;
+        position: relative;
+        z-index: 3;
+    }
+
+        .al-step > ul > li {
+            height: 100%;
+            float: left;
+            list-style: none;
+            text-align: center;
+        }
+
+            .al-step > ul > li > .ico {
+                border-radius: 50%;
+                background-color: #ccc;
+                padding: 8px 12px 8px 12px;
+                cursor: pointer;
+                color: #000;
+                display: inline-block;
+            }
+
+                .al-step > ul > li > .ico:hover {
+                    box-shadow: 0 0 6px 1px #ccc;
+                }
+
+            .al-step > ul > li.select > .ico {
+                background-color: #516784;
+                color: #fff;
+                padding: 8px 12px 8px 12px;
+                border-radius: 50%;
+            }
+
+            .al-step > ul > li > .txt {
+                font-size: 14px;
+            }
+
+    .al-step > .l-step {
+        background-color: #ccc;
+        width: 100%;
+        height: 3px;
+        z-index: 1;
+        margin: auto auto;
+        margin-top: -68px;
+        position: absolute;
+    }
+
+        .al-step > .l-step > .i {
+            background-color: #516784;
+            height: 3px;
+            z-index: 2;
+            width: 0px;
+        }
+
+/*table*/
+.table-panel {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+    .table-panel > .panel {
+        background-color: #fafafa;
+        width: 100%;
+        height: 40px;
+    }
+
+        .table-panel > .panel.show {
+            display: block;
+        }
+
+        .table-panel > .panel.hide {
+            display: none;
+        }
+
+        .table-panel > .panel > .t {
+            border-top: 1px solid #eee;
+            border-left: none;
+            border-right: 1px solid #eee;
+            border-bottom: none;
+            overflow: hidden;
+            font-size: 14px;
+        }
+
+            .table-panel > .panel > .t > .ico {
+                width: 20px;
+                height: 100%;
+                line-height: 40px;
+                float: left;
+                text-align: center;
+                padding: 0 0 0 5px;
+            }
+
+            .table-panel > .panel > .t > .txt {
+                padding-left: 5px;
+                color: #676a6c;
+                float: left;
+                height: 100%;
+                line-height: 40px;
+                font-size: 15px;
+            }
+
+
+            .table-panel > .panel > .t > .fn {
+                height: 100%;
+                float: right;
+                padding: 0 10px 0 0;
+                color: #676a6c;
+            }
+
+                .table-panel > .panel > .t > .fn > .i.select01 {
+                    color: #ffd800;
+                }
+
+                    .table-panel > .panel > .t > .fn > .i.select01:hover {
+                        color: #ffd800;
+                    }
+
+                .table-panel > .panel > .t > .fn > .i {
+                    float: left;
+                    line-height: 40px;
+                    cursor: pointer;
+                    padding-left: 10px;
+                }
+
+                    .table-panel > .panel > .t > .fn > .i:hover {
+                        color: #2f4050;
+                    }
+
+                    .table-panel > .panel > .t > .fn > .i > .ico {
+                        float: left;
+                    }
+
+                    .table-panel > .panel > .t > .fn > .i > .txt {
+                        float: left;
+                        padding-left: 5px;
+                        text-overflow: ellipsis;
+                        white-space: normal;
+                    }
+
+        .table-panel > .panel.hide + .t {
+            height: calc(100%);
+        }
+
+    .table-panel > .t {
+        width: 100%;
+        height: calc(100% - 45px);
+        overflow: auto;
+    }
+
+    .table-panel.page > .t {
+        width: 100%;
+        height: calc(100% - 85px);
+        overflow: auto;
+    }
+
+    .table-panel.page > .panel.hide + .t {
+        height: calc(100% - 45px);
+    }
+
+    .table-panel > .b {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        border-top: 1px solid #eee;
+        padding-top: 6px;
+    }
+
+    .table-panel > .h.show {
+        border-top: 1px solid #eee;
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .table-panel > .t > .table, .table-panel > .h > .table {
+        background-color: #eee;
+        color: #676a6c;
+        font-size: 14px;
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 1px;
+        *border-collapse: expression('separate', cellSpacing = '1px');
+    }
+
+    .table-panel > .h {
+        background-color: red;
+        display: block;
+    }
+
+    .table-panel > .info {
+        display: block;
+        height: 45px;
+        line-height: 45px;
+        padding-left: 10px;
+        border-top: 1px solid #eee;
+    }
+
+    .table-panel > .t > .table td {
+        border: 1px solid #f5f5f5;
+    }
+
+        .table-panel > .h > .table td.row, .table-panel > .h > .table td.error, .table-panel > .t > .table td.row, .table-panel > .t > .table td.error {
+            border-left: none;
+        }
+
+
+    .table-panel > .t > .table > thead > tr, .table-panel > .h > .table > thead > tr {
+        background-color: #fafafa;
+        height: 35px;
+    }
+
+        .table-panel > .t > .table > thead > tr > td, .table-panel > .h > .table > thead > tr > td {
+            text-align: center;
+            color: #676a6c;
+            word-break: keep-all;
+            padding: 0 2px 0 2px;
+        }
+
+            .table-panel > .t > .table > thead > tr > td.row, .table-panel > .h > .table > thead > tr > td.row,
+            .table-panel > .t > .table > thead > tr > td.check, .table-panel > .h > .table > thead > tr > td.check {
+                width: 40px;
+            }
+
+            .table-panel > .t > .table > thead > tr > td.check, .table-panel > .h > .table > thead > tr > td.check {
+                width: 40px;
+            }
+
+    .table-panel > .t > .table > tbody > tr {
+        background-color: #fff;
+        height: 35px;
+    }
+
+        .table-panel > .t > .table > tbody > tr:hover {
+            background-color: #fafafa;
+        }
+
+        .table-panel > .t > .table > tbody > tr.select {
+            background-color: #fff4ae;
+        }
+
+        .table-panel > .t > .table > tbody > tr.click {
+            cursor: pointer;
+        }
+
+        .table-panel > .t > .table > tbody > tr > td {
+            overflow: hidden;
+            font-size: 14px;
+        }
+
+            .table-panel > .t > .table > tbody > tr > td > span {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                display: block;
+                padding: 0 2px 0 2px;
+            }
+
+            .table-panel > .t > .table > tbody > tr > td > .input {
+                border: 1px solid #eee;
+                width: 50px;
+                height: 25px;
+                border-radius: 5px;
+            }
+
+                .table-panel > .t > .table > tbody > tr > td > .input:focus {
+                    border: 1px solid #19aa8d;
+                    border-radius: 5px;
+                }
+
+            .table-panel > .t > .table > tbody > tr > td.row {
+                text-align: center;
+                background-color: #fafafa;
+                color: #676a6c;
+                width: 40px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                -o-text-overflow: ellipsis;
+            }
+
+            .table-panel > .t > .table > tbody > tr > td.check {
+                text-align: center;
+                width: 40px;
+            }
+
+            .table-panel > .t > .table > tbody > tr > td.error {
+                background-color: #fff;
+                text-align: center;
+                height: 50px;
+            }
+
+
+            .table-panel > .t > .table > tbody > tr > td.fn {
+                text-align: center;
+                width: 40px;
+                cursor: pointer;
+            }
+
+                .table-panel > .t > .table > tbody > tr > td.fn > a {
+                    color: #676a6c;
+                }
+
+                    .table-panel > .t > .table > tbody > tr > td.fn > a:hover {
+                        color: #d12610;
+                    }
+
+            .table-panel > .t > .table > tbody > tr > td.click {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+                .table-panel > .t > .table > tbody > tr > td.click:hover {
+                    color: red;
+                    text-decoration: initial;
+                }
+
+        .table-panel > .t > .table > tbody > tr.select > td.row {
+        }
+
+/*al-panel*/
+
+.al-panel.fold.false {
+    width: 50px;
+    cursor: pointer;
+    background-color: #fafafa;
+}
+
+    .al-panel.fold.false > .panel > .t > .ico, .al-panel.fold.false > .panel > .t > .txt, .al-panel.fold.false > .panel > .t > .fn > .i, .al-panel.fold.false > .panel > .c {
+        display: none;
+    }
+
+    .al-panel.fold.false > .panel > .t > .fn {
+        padding: 0;
+    }
+
+        .al-panel.fold.false > .panel > .t > .fn > .i.fold {
+            display: block;
+            padding-left: 0;
+        }
+
+            .al-panel.fold.false > .panel > .t > .fn > .i.fold > .ico {
+                width: 50px;
+                text-align: center;
+            }
+
+.al-panel {
+    height: 100%;
+    width: 100%;
+}
+
+    .al-panel > .panel {
+        border: 1px solid #eee;
+        height: 100%;
+    }
+
+        .al-panel > .panel > .t {
+            background-color: #fafafa;
+            overflow: hidden;
+            font-size: 14px;
+            height: 39px;
+            border-bottom: 1px solid #eee;
+        }
+
+            .al-panel > .panel > .t > .ico {
+                width: 20px;
+                height: 100%;
+                line-height: 40px;
+                float: left;
+                text-align: center;
+                padding: 0 0 0 5px;
+            }
+
+            .al-panel > .panel > .t > .txt {
+                padding-left: 5px;
+                color: #676a6c;
+                float: left;
+                height: 100%;
+                line-height: 40px;
+                font-size: 15px;
+            }
+
+            .al-panel > .panel > .t > .fn {
+                height: 100%;
+                float: right;
+                padding: 0 10px 0 0;
+                color: #676a6c;
+            }
+
+                .al-panel > .panel > .t > .fn > .i {
+                    float: left;
+                    line-height: 40px;
+                    cursor: pointer;
+                    padding-left: 20px;
+                }
+
+                    .al-panel > .panel > .t > .fn > .i.angle {
+                        padding-left: 20px;
+                    }
+
+                        .al-panel > .panel > .t > .fn > .i.angle :hover {
+                            color: red;
+                        }
+
+                    .al-panel > .panel > .t > .fn > .i.fold {
+                        padding-left: 20px;
+                    }
+
+                        .al-panel > .panel > .t > .fn > .i.fold :hover {
+                            color: red;
+                        }
+
+                    .al-panel > .panel > .t > .fn > .i:hover {
+                        color: #2f4050;
+                    }
+
+                    .al-panel > .panel > .t > .fn > .i > .ico {
+                        float: left;
+                        font-size: 14px;
+                    }
+
+                    .al-panel > .panel > .t > .fn > .i > .txt {
+                        float: left;
+                        padding-left: 5px;
+                        text-overflow: ellipsis;
+                        white-space: normal;
+                    }
+
+        .al-panel > .panel > .c {
+            overflow: auto;
+            height: calc(100% - 40px);
+        }
+
+            .al-panel > .panel > .c > p.no-data {
+                text-align: center;
+                padding: 20px;
+                color: #d4d4d4;
+                font-family: 'Microsoft JhengHei UI';
+            }
+
+/*autocomplete*/
+.al-auto-input {
+    border-left: 1.5px solid #19aa8d;
+    border-right: 1.5px solid #19aa8d;
+    border-bottom: 1.5px solid #19aa8d;
+    border-top: 1.5px solid #19aa8d;
+    background-color: #fafafa;
+    position: absolute;
+    z-index: 10000;
+    top: 0px;
+    overflow: hidden;
+    display: block;
+    max-height: 180px;
+    overflow-y: auto;
+    border-radius: 8px;
+    -webkit-box-shadow: #666 0px 0px 2px;
+    -moz-box-shadow: #666 0px 0px 2px;
+    box-shadow: #666 0px 0px 2px;
+}
+
+    .al-auto-input.hide {
+        display: none;
+    }
+
+    .al-auto-input > .i {
+        height: 30px;
+        line-height: 30px;
+        color: #262626;
+        font-size: 14px;
+        overflow: hidden;
+        cursor: default;
+        text-align: left;
+    }
+
+        .al-auto-input > .i > .check {
+            float: left;
+            padding: 0 5px 0 5px;
+        }
+
+        .al-auto-input > .i > .txt {
+            float: left;
+            padding-left: 5px;
+            width: 95%;
+        }
+
+        .al-auto-input > .i.hide {
+            display: none;
+        }
+
+    .al-auto-input > .i-s {
+        height: auto;
+        padding-left: 5px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+        padding-top: 3px;
+        overflow: hidden;
+    }
+
+        .al-auto-input > .i-s > input {
+            border: 1px solid #eee;
+            height: 22px;
+            width: 100%;
+            padding-left: 3px;
+            border-radius: 3px;
+        }
+
+            .al-auto-input > .i-s > input:focus {
+                border: 1px dashed #d12610;
+            }
+
+    .al-auto-input > .i:last-child {
+        border-bottom: 0px solid #d4d4d4;
+    }
+
+    .al-auto-input > .i:hover {
+        background-color: #2f4050;
+        color: #fff;
+    }
+
+    .al-auto-input > .i.select {
+        background-color: #19aa8d;
+        color: #fff;
+    }
+/*menu*/
+.al-menus-l {
+    border: 1px solid #eee;
+    background-color: #fff;
+    position: absolute;
+    z-index: 10000;
+    top: 0px;
+    overflow: hidden;
+    display: block;
+    padding: 4px 0 4px 0px;
+    border-radius: 6px;
+    -moz-border-radius: 0 0 6px 6px;
+    -webkit-border-radius: 0 0 6px 6px;
+    -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+
+    .al-menus-l ::selection {
+        background-color: transparent;
+    }
+
+    .al-menus-l > .i {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        color: #676a6c;
+    }
+
+        .al-menus-l > .i > .t {
+            height: 27px;
+            line-height: 27px;
+        }
+
+        .al-menus-l > .i.class {
+            border-bottom: 1px solid #eee;
+        }
+
+        .al-menus-l > .i:last-child {
+            border-bottom: none;
+            padding: 5px 0 0 0;
+        }
+
+        .al-menus-l > .i > .t:hover {
+            background-color: #19aa8d;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .al-menus-l > .i > .t > i {
+            width: 10px;
+        }
+
+        .al-menus-l > .i > .t > .txt {
+            margin-left: 8px;
+        }
+
+            .al-menus-l > .i > .t > .txt.no {
+                margin-left: 18px;
+            }
+
+        .al-menus-l > .i > .sub {
+            display: none;
+        }
+
+            .al-menus-l > .i > .sub.open {
+                display: block;
+            }
+
+            .al-menus-l > .i > .sub > .i {
+                width: 100%;
+                height: auto;
+                overflow: hidden;
+            }
+
+                .al-menus-l > .i > .sub > .i > .t {
+                    height: 27px;
+                    line-height: 27px;
+                    padding-left: 32px;
+                }
+
+                    .al-menus-l > .i > .sub > .i > .t:hover {
+                        background-color: #19aa8d;
+                    }
+
+                    .al-menus-l > .i > .sub > .i > .t > .txt {
+                        padding-left: 5px;
+                    }
+
+.al-pager.pager {
+    padding: 3px;
+    margin: 3px;
+}
+
+    .al-pager.pager.center {
+        text-align: left;
+    }
+
+    .al-pager.pager.left {
+        text-align: left;
+    }
+
+    .al-pager.pager.right {
+        text-align: right;
+    }
+
+    .al-pager.pager a {
+        border: #eee 1px solid;
+        padding: 2px 5px;
+        margin: 3px;
+        color: #2f4050;
+        text-decoration: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+        .al-pager.pager a:hover {
+            border: rgb(81, 155, 189) 1px solid;
+            color: #666;
+        }
+
+        .al-pager.pager a:active {
+            border: #999 1px solid;
+            color: #666;
+        }
+
+    .al-pager.pager .current {
+        border: #2f4050 1px solid;
+        padding: 2px 5px;
+        margin: 3px;
+        background-color: #2f4050;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    .al-pager.pager .disabled {
+        border: #eee 1px solid;
+        padding: 2px 5px;
+        margin: 2px;
+        color: #ddd;
+        border-radius: 5px;
+    }

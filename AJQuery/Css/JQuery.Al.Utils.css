@@ -1,0 +1,186 @@
+body, ul, li, input, img, a, div, ol {
+    padding: 0;
+    margin: 0;
+}
+/*nav*/
+.a-nav {
+    height: 30px;
+    background-color: #f3f3f4;
+    margin-top: 3px;
+    width: 100%;
+    line-height: 30px;
+    padding-left: 20px;
+}
+
+    .a-nav > ol {
+        list-style: none;
+        overflow: hidden;
+    }
+
+        .a-nav > ol > li {
+            display: inline-block;
+            float: left;
+        }
+
+            .a-nav > ol > li + li:before {
+                padding: 0 8px;
+                color: #ccc;
+                content: "/\00a0";
+            }
+
+            .a-nav > ol > li.active {
+                color: #ea6365;
+                cursor: pointer;
+            }
+
+.alform {
+    padding-top: 5px;
+}
+
+    .alform > ul {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        width: 100%;
+    }
+
+        .alform > ul > li {
+            height: 35px;
+            line-height: 35px;
+            list-style: none;
+        }
+
+            .alform > ul > li.data-id {
+                display: none;
+            }
+
+            .alform > ul > li > span.title {
+                float: left;
+                display: block;
+                height: 26px;
+                text-align: right;
+                line-height: 26px;
+                font-size: 14px;
+                font-weight: 500;
+            }
+
+            .alform > ul > li > span.fn {
+                float: left;
+                display: block;
+                height: 22px;
+                text-align: right;
+                line-height: 22px;
+                font-size: 14px;
+                color: #808080;
+                cursor: pointer;
+                margin-left: 10px;
+            }
+
+            .alform > ul > li > .textbox {
+                border: 1.5px solid #ccc;
+                height: 26px;
+                width: 140px;
+                padding-left: 5px;
+                float: left;
+                border-radius: 10px;
+            }
+
+            .alform > ul > li > .file {
+                height: 26px;
+                width: 140px;
+                float: left;
+                border: 1px solid #ccc;
+                overflow:hidden;
+            }
+
+
+            .alform > ul > li > .textbox:focus {
+                border: 1.5px solid #19aa8d;
+            }
+
+            .alform > ul > li > .select {
+                background: #fff url("../Images/DROPDOWN.png") no-repeat;
+                background-position-x: 99%;
+                background-position-y: center;
+            }
+
+            .alform > ul > li > .checkbox {
+                border: 1.5px solid #ccc;
+            }
+
+                .alform > ul > li > .checkbox :focus {
+                    border: 1.5px solid #E4393C;
+                }
+
+            .alform > ul > li > .select {
+                border: 1.5px solid #ccc;
+                height: 26px;
+                width: 140px;
+                padding-left: 5px;
+                float: left;
+                border-radius: 10px;
+            }
+
+                .alform > ul > li > .select > option:hover {
+                    background-color: red;
+                }
+
+            .alform > ul > li > .textarea {
+                border: 1.5px solid #ccc;
+                height: 26px;
+                width: 140px;
+                padding-left: 5px;
+                float: left;
+                border-radius: 10px;
+            }
+
+.alform-select {
+    background: #fff url("../Images/DROPDOWN.png") no-repeat;
+    background-position-x: 99%;
+    background-position-y: center;
+}
+
+.AJQuery .input {
+    border: 1px solid #ccc;
+    height: 25px;
+    line-height: 25px;
+    width: 140px;
+    padding-left: 5px;
+}
+
+    .AJQuery .input:focus {
+        border: 1px solid #19aa8d;
+    }
+
+.AJQuery .textarea {
+    resize: none;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    font-family: inherit;
+    font-size: inherit;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    background-color: white;
+    flex-direction: column;
+    white-space: pre-wrap;
+    cursor: auto;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    height: 300px;
+    width: 100%;
+    overflow: auto;
+    padding: 0;
+}
+
+    .AJQuery .textarea:focus {
+        border: 1px solid #19aa8d;
+    }
+
+.AJQuery .checkbox {
+}
+
+.AJQuery .span-red {
+    color: red;
+}
